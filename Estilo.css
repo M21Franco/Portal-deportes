@@ -1,0 +1,27 @@
+body, html{
+    margin: unset;
+    padding: unset;
+    height: 100%;
+    width: 100%;
+}
+
+.banner img, .banner{
+    height: 70px;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.divImg{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+.banner{
+    box-sizing: border-box;
+}
