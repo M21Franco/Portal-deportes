@@ -15,13 +15,17 @@ body, html{
     margin-top: 10px;
 }
 
-.divImg{
+/* .divImg{
     display: flex;
     position: relative;
     justify-content: center;
-}
+} */
 
 
-.banner{
+/* .banner{
     box-sizing: border-box;
+} */
+
+.p{
+    margin: 0px;
 }
