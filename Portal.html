@@ -15,28 +15,30 @@
 </head>
 
 <body>
-  <header class="container">
-    <nav class="row">
-      <div class="nav col-3">
-        <img id="nbaImg" src="nba-logo.png" alt="NBA Banner">
-      </div>
+  <header class="container-fluid shadow">
+    <div class="container">
+      <nav class="row">
+        <div class="nav col-3">
+          <img id="nbaImg" src="nba-logo.png" alt="NBA Banner">
+        </div>
 
-      <div class="col-9">
-        <ul class="nav justify-content-end container-fluid">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Standinds</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Squedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Live</a>
-          </li>
-      </div>
-    </nav>
+        <div class="col-9">
+          <ul class="nav justify-content-end container-fluid">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Standinds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Squedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live</a>
+            </li>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <!-- Prueba -->
@@ -44,7 +46,7 @@
     <div class="main row">
       <h1 class="jug">Jugadores destacados</h1>
 
-      <table cellspacing="0" class="table-stripped table-hover col-md-9">
+      <table cellspacing="0" class="table-stripped table-hover col-md-9 shadow">
         <div class="container">
           <col class="dg-rank">
           <col class="dg-name_display_last_init">
@@ -151,24 +153,24 @@
       </table>
 
       <aside class="col-md-3">
-        <div class="divMid1">
+        <div class="divMid1 shadow-lg">
           <div class="innerDiv">
-          <img alt="Khris Davis" src="https://securea.mlb.com/mlb/images/players/head_shot/501981.jpg" srcset="
+            <img alt="Khris Davis" src="https://securea.mlb.com/mlb/images/players/head_shot/501981.jpg" srcset="
                                   https://securea.mlb.com/mlb/images/players/head_shot/501981.jpg 1x,
                                   https://securea.mlb.com/mlb/images/players/head_shot/501981@2x.jpg 2x,
                                   https://securea.mlb.com/mlb/images/players/head_shot/501981@3x.jpg 3x"
-            class="playerImg rounded mx-auto d-block">
-          <h1 class="container">
-            <span>Khris Davis</span>
-            <span>#2</span>
-            <span>.549</span>
-          </h1>
-          <ul>
-            <p>LF</p>
-            <p>B/T: R/R</p>
-            <p>5' 10/195</p>
-            <p>Age: 31</p>
-          </ul>
+              class="playerImg rounded mx-auto d-block">
+            <h1 class="container d-block">
+              <span>Khris Davis</span>
+              <span>#2</span>
+              <span>.549</span>
+            </h1>
+            <ul class="d-block">
+              <p>LF</p>
+              <p>B/T: R/R</p>
+              <p>5' 10/195</p>
+              <p>Age: 31</p>
+            </ul>
           </div>
         </div>
       </aside>
@@ -176,8 +178,14 @@
     </div>
   </div>
 
-  <footer class="container">
-    Misael Anthony
+  <footer class="shadow">
+
+    <div class="container">
+      <p class="sad">
+        Anthony Melendez ****-**** & Misael Sanchez 2017-0176
+      </p>
+    </div>
+
   </footer>
 
   <!-- Fin Prueba -->

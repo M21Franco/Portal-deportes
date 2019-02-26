@@ -9,6 +9,7 @@ body, html{
 
 .nav img, .banner{
     height: 70px;
+    /* padding-left: ; */
 }
 
 .nav{
@@ -30,7 +31,19 @@ span{
     text-align: center;
 }
 
+header{
+    height: 85px;
+}
 
+.main{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.sad{
+    justify-content: center;
+    padding-top: 2.5px;
+}
 
 /* .divImg{
     display: flex;
@@ -59,8 +72,15 @@ thead{
 }
 
 .divMid1{
-    background-color: black;
-    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(76,76,76) 0%,rgb(89,89,89) 12%,rgb(102,102,102) 25%,rgb(71,71,71) 39%,rgb(44,44,44) 50%,rgb(0,0,0) 51%,rgb(17,17,17) 60%,rgb(43,43,43) 76%,rgb(28,28,28) 91%,rgb(19,19,19) 100%);;
+    border-radius: 5px;
+}
+
+footer{
+    height: 100%;
+    text-align: center;
+    background-color: #0A55A8;
+    color: gainsboro;
 }
 
 .innerDiv{
