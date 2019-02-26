@@ -22,6 +22,16 @@ li{
     align-self: center;
 }
 
+ul{
+    text-align: center;
+}
+
+span{
+    text-align: center;
+}
+
+
+
 /* .divImg{
     display: flex;
     position: relative;
