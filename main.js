@@ -40,34 +40,5 @@ firebase.initializeApp({
 
       });
   });
-  /* db.collection("Jugadores").add({
-    RK:1,
-    Player:"paul,gasol",
-    Team:"San Antonio", 	
-    FGM:451,
-    FGA:505,
-    FG:283,
-    PM:155,
-    PA:642,
-    P:125,
-    FTM:2, 	
-    FTA:34,
-    FT:152, 	
-    OREB:46, 	
-    DREB:87,  	
-    REB: 85, 	
-    AST:".122",  	
-    STL:".511",  	
-    BLK:".466" , 	
-    TOV: ".846", 	
-    EFF:".698" 
-   })
-   .then(function(docRef) {
-       console.log('Registro Satisfactorio',docRef.id)
-       
-   })
-   .catch(function (error) {
-       console.log('error: ',error)
-       
-   });*/
+  
    
