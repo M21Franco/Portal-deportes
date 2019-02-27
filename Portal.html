@@ -9,9 +9,8 @@
   <!-- Boostrap CSS Link -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="Estilo.css">
-  <title>Portal NBA</title>
+  <title>Portal MLB</title>
 </head>
 
 <body>
@@ -72,7 +71,7 @@
           <col class="dg-ops">
           <thead class="thead-dark">
             <tr>
-              <th tabindex="0" index="0"><abbr>RK</abbr></th>
+              <th tabindex="0" index="0"><abbr>RK </abbr></th>
               <th tabindex="0" index="1">Player</th>
               <th tabindex="0" index="2">Team</th>
               <th tabindex="0" index="3" style="display: none;">Pos</th>
@@ -96,8 +95,8 @@
               <th tabindex="0" index="21"><abbr>EFF</abbr></th>
             </tr>
           </thead>
-          <tbody tabindex="-1">
-            <tr index="0" tabindex="0">
+          <tbody id="tabla">
+            <tr class="text-center">
               <td index="0" class="dg-rank">1</td>
               <td index="1" class="dg-name_display_last_init">&nbsp;<a href="/team/player.jsp?player_id=501981">Davis,
                   K</a></td>
@@ -122,32 +121,6 @@
               <td index="20" class="dg-slg">.549</td>
               <td index="21" class="dg-ops">.874</td>
             </tr>
-            <tr index="0" tabindex="0">
-              <td index="0" class="dg-rank">1</td>
-              <td index="1" class="dg-name_display_last_init">&nbsp;<a href="/team/player.jsp?player_id=501981">Davis,
-                  K</a></td>
-              <td index="2" class="dg-team_abbrev">OAK</td>
-              <td index="3" class="dg-active_sw" style="display: none;">&nbsp;</td>
-              <td index="4" class="dg-player_id" style="display: none;">501981</td>
-              <td index="5" class="dg-pos">LF</td>
-              <td index="6" class="dg-g">151</td>
-              <td index="7" class="dg-ab">576</td>
-              <td index="8" class="dg-r">98</td>
-              <td index="9" class="dg-h">142</td>
-              <td index="10" class="dg-d">28</td>
-              <td index="11" class="dg-t">1</td>
-              <td index="12" class="dg-hr active">48</td>
-              <td index="13" class="dg-rbi">123</td>
-              <td index="14" class="dg-bb">59</td>
-              <td index="15" class="dg-so">175</td>
-              <td index="16" class="dg-sb">0</td>
-              <td index="17" class="dg-cs">0</td>
-              <td index="18" class="dg-avg">.247</td>
-              <td index="19" class="dg-obp">.326</td>
-              <td index="20" class="dg-slg">.549</td>
-              <td index="21" class="dg-ops">.874</td>
-            </tr>
-
           </tbody>
         </div>
       </table>
@@ -182,7 +155,7 @@
 
     <div class="container">
       <p class="sad">
-        Anthony Melendez ****-**** & Misael Sanchez 2017-0176
+        Anthony Melendez 2017-0037 Backend ****-**** & Misael Sanchez 2017-0176 Frontend
       </p>
     </div>
 
@@ -190,7 +163,8 @@
 
   <!-- Fin Prueba -->
 
-
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -200,6 +174,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
     crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
