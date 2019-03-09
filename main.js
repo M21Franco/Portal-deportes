@@ -27,18 +27,18 @@ firebase.initializeApp({
           <td index="11" class="dg-t">${doc.data().FTM}</td>
           <td index="12" class="dg-hr active">${doc.data().FTA}</td>
           <td index="13" class="dg-rbi">${doc.data().FT}</td>
-          <td index="14" class="dg-bb">${doc.data().OREB}</td>
-          <td index="15" class="dg-so">${doc.data().DREB}</td>
-          <td index="16" class="dg-sb">${doc.data().REB}</td>
-          <td index="17" class="dg-cs">${doc.data().AST}</td>
-          <td index="18" class="dg-avg">${doc.data().STL}</td>
-          <td index="19" class="dg-obp">${doc.data().BLK}</td>
-          <td index="20" class="dg-slg">${doc.data().TOV}</td>
-          <td index="21" class="dg-ops">${doc.data().EFF}</td>
+          
         </tr>
           `
 
       });
   });
   
-   
+   /* <td index="14" class="dg-bb">${doc.data().OREB}</td>
+          <td index="15" class="dg-so">${doc.data().DREB}</td>
+          <td index="16" class="dg-sb">${doc.data().REB}</td>
+          <td index="17" class="dg-cs">${doc.data().AST}</td>
+          <td index="18" class="dg-avg">${doc.data().STL}</td>
+          <td index="19" class="dg-obp">${doc.data().BLK}</td>
+          <td index="20" class="dg-slg">${doc.data().TOV}</td>
+          <td index="21" class="dg-ops">${doc.data().EFF}</td> */
