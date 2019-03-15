@@ -11,6 +11,16 @@ body {
     background-size: contain;
 }
 
+.line{
+    display: inline;
+}
+
+.mx-auto{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
 .divFather {
     width: 70%;
     /* height: 70%; */
