@@ -1,18 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Boostrap CSS Link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilo.css">
     <title>Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Estilo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Admin.css">
     <script src="main.js"></script>
 </head>
+
 <body class="fondo">
-    
-    <div class="container divFather">
+
+    <div class="divFather">
+        <div class="container">
+            <h1 class="container DatosJugadores">Datos de Jugadores</h1>
+        </div>
+        <div class="container">
+            <div class="row bg_1">
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Rank">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Player">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Team">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
+            <div class="row bg_1">
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Field Goal Made">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Field Goal Attempts">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Fiel Goal %">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
+            <div class="row bg_1">
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="3 Point Made">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="3 Point Attempts">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="3 Point %">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
+            <div class="row bg_1">
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Free Throws Made">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Free Throws Attempts">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="col-3 container input-effect shadow">
+                    <input class="effect-17" type="text" placeholder="Free Throws %">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <button class="btn btn-lg btn-outline-primary">Enviar</button>
+                    </div>
+
+                    <div class="col-lg">
+                        <button class="btn btn-lg btn-outline-primary">Enviar</button>
+                    </div>
+
+                    <div class="col-lg">
+                        <button class="btn btn-lg btn-outline-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

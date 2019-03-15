@@ -15,7 +15,6 @@ body, html{
 
 .nav img, .banner{
     height: 70px;
-    /* padding-left: ; */
 }
 
 .nav{
@@ -96,15 +95,4 @@ footer{
 .innerDiv{
     color: gainsboro;
     padding: 10px;
-}
-
-/* Admin page */
-
-.fondo{
-    background-image: url("https://i.pinimg.com/originals/d5/1f/db/d51fdb3f39b8a7aec75ba58e3ef2c41d.jpg");
-    background-size: contain;
-}
-
-.divFather{
-    width: 
 }
