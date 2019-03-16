@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i');
 body {
-    font-family: 'Muli', sans-serif;
-    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Admin page */
 
 .fondo {
-    background-image: url("https://i.pinimg.com/originals/d5/1f/db/d51fdb3f39b8a7aec75ba58e3ef2c41d.jpg");
+    background-image: url("d51fdb3f39b8a7aec75ba58e3ef2c41d.jpg");
     background-size: contain;
+}
+
+header{
+    background-color:  rgba(255, 255, 255, 0.925);
 }
 
 .line{
@@ -16,18 +19,23 @@ body {
 }
 
 .mx-auto{
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin: 40px 4%;
+}
+
+.btn{
+    width: 12rem;
+}
+
+.inputBuscar{
+    margin: 40px 4%;
 }
 
 
 .divFather {
     width: 70%;
-    /* height: 70%; */
-    /* background-color: white; */
-    /* position: absolute; */
-    background: rgba(32, 35, 37, 0.925);
-    border-radius: 12px;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     padding: 20px;
@@ -40,6 +48,8 @@ body {
 .DatosJugadores{
     text-align: center;
     color: red;
+    margin: 40px 4%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .effect-17 {
@@ -105,8 +115,6 @@ input[type="text"] {
     
 }
 
-
-
 /* necessary to give position: relative to parent. */
 
 input[type="text"] {
@@ -116,3 +124,5 @@ input[type="text"] {
     box-sizing: border-box;
     letter-spacing: 1px;
 }
+
+/* Header */

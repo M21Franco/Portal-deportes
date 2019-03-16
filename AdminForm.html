@@ -7,34 +7,73 @@
     <!-- Boostrap CSS Link -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Estilo.css">
     <title>Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Admin.css">
+    <link rel="stylesheet" href="Estilo.css">
+
     <script src="main.js"></script>
 </head>
 
 <body class="fondo">
+
+    <header class="container-fluid shadow">
+        <div class="container">
+            <nav class="row">
+                <div class="nav col-3">
+                    <img id="nbaImg" src="nba-logo.png" alt="NBA Banner">
+                </div>
+
+                <div class="col-8">
+                    <ul class="nav justify-content-end container-fluid">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Portal.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Standinds</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Squedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminForm.html">Admin</a>
+                        </li>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <div class="divFather">
         <div class="container">
             <h1 class="container DatosJugadores">Datos de Jugadores</h1>
         </div>
         <div class="container">
+
+            <div class="inputBuscar row bg_1">
+                <div class="col-11 container input-effect">
+                    <input class="effect-17" type="text" placeholder="Buscar">
+                    <!-- <label>First Name</label> -->
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
             <div class="row bg_1">
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Rank">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Player">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Team">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
@@ -42,19 +81,19 @@
             </div>
 
             <div class="row bg_1">
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Field Goal Made">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Field Goal Attempts">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Fiel Goal %">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
@@ -62,19 +101,19 @@
             </div>
 
             <div class="row bg_1">
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="3 Point Made">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="3 Point Attempts">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="3 Point %">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
@@ -82,19 +121,19 @@
             </div>
 
             <div class="row bg_1">
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Free Throws Made">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Free Throws Attempts">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
 
-                <div class="col-3 container input-effect shadow">
+                <div class="col-3 container input-effect">
                     <input class="effect-17" type="text" placeholder="Free Throws %">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
@@ -102,23 +141,36 @@
             </div>
 
             <!-- <div class="container"> -->
-                <div class="row bg_1">
-                    <div class="mx-auto">
-                        <div class="line col-lg">
-                            <button class="btn btn-lg btn-outline-primary">Registrar</button>
-                        </div>
-                        <div class="line col-lg">
-                            <button class="btn btn-lg btn-outline-primary">Enviar</button>
-                        </div>
-                        <div class="line col-lg">
-                            <button class="btn btn-lg btn-outline-primary">Enviar</button>
-                        </div>
+            <div class="row bg_1">
+                <div class="mx-auto">
+                    <div class="line col-4">
+                        <button class="btn btn-lg btn-outline-primary">Registrar</button>
+                    </div>
+                    <div class="line col-4">
+                        <button class="btn btn-lg btn-outline-primary">Editar</button>
+                    </div>
+                    <div class="line col-4">
+                        <button class="btn btn-lg btn-outline-primary">Eliminar</button>
+                    </div>
+                    <div class="line col-4">
+                        <button class="btn btn-lg btn-outline-primary">Limpiar</button>
                     </div>
                 </div>
+            </div>
             <!-- </div> -->
         </div>
 
     </div>
+
+    <footer class="shadow">
+
+        <div class="container">
+            <p class="sad">
+                Anthony Melendez 2017-0037, Backend & Misael Sanchez 2017-0176, Frontend
+            </p>
+        </div>
+
+    </footer>
 
 
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
