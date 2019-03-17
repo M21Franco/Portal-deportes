@@ -22,6 +22,11 @@ header{
     margin: 40px 4%;
 }
 
+.btn{
+    width: 20%;
+    right: 3%;
+}
+
 .divBtn{
     /* top: 50%; */
     left: 3%;
