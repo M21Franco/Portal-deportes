@@ -22,8 +22,10 @@ header{
     margin: 40px 4%;
 }
 
-.btn{
-    width: 12rem;
+.divBtn{
+    /* top: 50%; */
+    left: 3%;
+    /* transform: translate(-50%, -50%); */
 }
 
 .inputBuscar{
