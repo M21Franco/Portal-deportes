@@ -18,13 +18,17 @@ header{
     display: inline;
 }
 
+.btnBuscar{
+    left: 3%;
+}
+
 .mx-auto{
     margin: 40px 4%;
 }
 
 .btn{
     width: 20%;
-    right: 3%;
+    right: 4%;
 }
 
 .divBtn{
