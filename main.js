@@ -33,7 +33,7 @@ firebase.initializeApp({
 
       });
   });
-  
+ 
    /* <td index="14" class="dg-bb">${doc.data().OREB}</td>
           <td index="15" class="dg-so">${doc.data().DREB}</td>
           <td index="16" class="dg-sb">${doc.data().REB}</td>
