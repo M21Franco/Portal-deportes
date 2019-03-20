@@ -59,7 +59,7 @@ firebase.initializeApp({
     
     }
     function Editar() {
-        var washingtonRef = db.collection("Jugadores").doc(document.getElementById('nombre').value);
+        var washingtonRef = db.collection("Jugadores").doc(document.getElementById('Buscar').value);
         var nombre = document.getElementById('nombre').value;
         var team =document.getElementById('team').value;
         var Rank = document.getElementById('rank').value;
