@@ -20,7 +20,7 @@ firebase.initializeApp({
         var IntentosLibres=document.getElementById('IntentosLibres').value;
         var PorcientoTiro=document.getElementById('PorcientoTiro').value;
     
-        db.collection("Jugadores").doc(document.getElementById('nombre').value).set({
+        db.collection("cities").doc(nombre).set({
           RK:Rank,
           Player:nombre,
           Team:team,
@@ -34,9 +34,10 @@ firebase.initializeApp({
           FTA:IntentosLibres,
           FT:PorcientoTiro
       })
-          .then(function (docRef) {
+          .then(function () {
     
-              console.log("Registro Satisfactorio", docRef.id)
+              console.log("Registro Satisfactorio")
+              alert("Registro Satisfactorio");
               document.getElementById('nombre').value = "";
               document.getElementById('team').value = "";
               document.getElementById('IntentosLibres').value = "";
@@ -58,7 +59,7 @@ firebase.initializeApp({
     
     }
     function Editar() {
-        var washingtonRef = db.collection("Jugadores").doc("DC");
+        var washingtonRef = db.collection("Jugadores").doc(document.getElementById('nombre').value);
         var nombre = document.getElementById('nombre').value;
         var team =document.getElementById('team').value;
         var Rank = document.getElementById('rank').value;
@@ -88,6 +89,7 @@ firebase.initializeApp({
         })
         .then(function() {
             console.log("Document successfully updated!");
+            alert("Document successfully updated!");
         })
         .catch(function(error) {
             // The document probably doesn't exist.
