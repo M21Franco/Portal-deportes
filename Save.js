@@ -20,7 +20,7 @@ firebase.initializeApp({
         var IntentosLibres=document.getElementById('IntentosLibres').value;
         var PorcientoTiro=document.getElementById('PorcientoTiro').value;
     
-        db.collection("cities").doc(nombre).set({
+        db.collection("Jugadores").doc(nombre).set({
           RK:Rank,
           Player:nombre,
           Team:team,
