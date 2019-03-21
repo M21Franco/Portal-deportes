@@ -55,7 +55,7 @@
 
             <div class="inputBuscar row bg_1">
                 <div class="col-8 input-effect">
-                    <input class="effect-17" type="text" id="Buscar" placeholder="Escriba el Nombre del Jugador Que Desee editar" style="margin-top: 4%;">
+                    <input class="effect-17" type="text" id="Buscar" placeholder="Escribael Nombre Para Editar" style="margin-top: 4%;">
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="col-3 container input-effect">
-                    <input class="effect-17" type="text" id="nombre"placeholder="Player">
+                    <input class="effect-17" type="text" id="nombre"placeholder="Player" maxlength="6" >
                     <!-- <label>First Name</label> -->
                     <span class="focus-border"></span>
                 </div>
@@ -163,13 +163,77 @@
                     </div>
                     <div class="line col">
                         <button class="btn btn-lg btn-outline-primary">Limpiar</button>
-                    </div>
+                    </div>  
                 </div>
             </div>
             <!-- </div> -->
+            
         </div>
 
     </div>
+        <div class="mainc row">
+          <h1 class="jug display-4 col-">Jugadores destacados</h1>
+    
+          <table cellspacing="0" class="table table-sm table-dark table-striped table-hover col-md-9 shadow">
+            <!-- <div class="container"> -->
+            <!--  -->
+            <thead class="thead-light">
+              <tr>
+                <th tabindex="0" index="0"><abbr>RK</abbr></th>
+                <th tabindex="0" index="1">Player</th>
+                <th tabindex="0" index="2">Team</th>
+                <th tabindex="0" index="3" style="display: none;">Pos</th>
+                <th tabindex="0" index="4" style="display: none;">PTS</th>
+                <th tabindex="0" index="5">FGM</th>
+                <th tabindex="0" index="6"><abbr>FGA</abbr></th>
+                <th tabindex="0" index="7"><abbr>FG%</abbr></th>
+                <th tabindex="0" index="8"><abbr>3PM</abbr></th>
+                <th tabindex="0" index="9"><abbr>3PA</abbr></th>
+                <th tabindex="0" index="10"><abbr>3P%</abbr></th>
+                <th tabindex="0" index="11"><abbr>FTM</abbr></th>
+                <th tabindex="0" index="12"><abbr>FTA</abbr></th>
+                <th tabindex="0" index="13"><abbr>FT%</abbr></th>
+                <!-- <th tabindex="0" index="14"><abbr>OREB</abbr></th> -->
+                <!-- <th tabindex="0" index="15"><abbr>DREB</abbr></th> -->
+                <!-- <th tabindex="0" index="16"><abbr>REB</abbr></th> -->
+                <!-- <th tabindex="0" index="17"><abbr>AST</abbr></th> -->
+                <!-- <th tabindex="0" index="18"><abbr>STL</abbr></th> -->
+                <!-- <th tabindex="0" index="19"><abbr>BLK</abbr></th> -->
+                <!-- <th tabindex="0" index="20"><abbr>TOV</abbr></th> -->
+                <!-- <th tabindex="0" index="21"><abbr>EFF</abbr></th> -->
+              </tr>
+            </thead>
+            <tbody id="tabla">
+              <tr class="text-center">
+                <td index="0" class="dg-rank">1</td>
+                <td index="1" class="dg-name_display_last_init">&nbsp;<a href="/team/player.jsp?player_id=501981">Davis,
+                    K</a></td>
+                <td index="2" class="dg-team_abbrev">OAK</td>
+                <td index="3" class="dg-active_sw" style="display: none;">&nbsp;</td>
+                <td index="4" class="dg-player_id" style="display: none;">501981</td>
+                <td index="5" class="dg-pos">LF</td>
+                <td index="6" class="dg-g">151</td>
+                <td index="7" class="dg-ab">576</td>
+                <td index="8" class="dg-r">98</td>
+                <td index="9" class="dg-h">142</td>
+                <td index="10" class="dg-d">28</td>
+                <td index="11" class="dg-t">1</td>
+                <td index="12" class="dg-hr active">48</td>
+                <td index="13" class="dg-rbi">123</td>
+                <!-- <td index="14" class="dg-bb">59</td> -->
+                <!-- <td index="15" class="dg-so">175</td> -->
+                <!-- <td index="16" class="dg-sb">0</td> -->
+                <!-- <td index="17" class="dg-cs">0</td> -->
+                <!-- <td index="18" class="dg-avg">.247</td> -->
+                <!-- <td index="19" class="dg-obp">.326</td> -->
+                <!-- <td index="20" class="dg-slg">.549</td> -->
+                <!-- <td index="21" class="dg-ops">.874</td> -->
+              </tr>
+            </tbody>
+            <!-- </div> -->
+          </table>
+        </div>
+    
 
     <footer class="shadow">
 
@@ -192,6 +256,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
     crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <script src="Save.js"></script>
 </body>
 

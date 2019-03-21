@@ -43,7 +43,7 @@ header{
 
 
 .divFather {
-    width: 70%;
+    width: 53%;
     height: 70%;
     background: rgba(255, 255, 255, 0.925);
     border-radius: 20px;
@@ -51,8 +51,8 @@ header{
     overflow: hidden;
     padding: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 27%;
     transform: translate(-50%, -50%);
 }
 
@@ -134,6 +134,19 @@ input[type="text"] {
     width: 100%;
     box-sizing: border-box;
     letter-spacing: 1px;
+}
+.mainc{
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 18%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: red;
+
+    
 }
 
 /* Header */

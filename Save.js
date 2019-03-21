@@ -90,6 +90,18 @@ firebase.initializeApp({
         .then(function() {
             console.log("Document successfully updated!");
             alert("Document successfully updated!");
+            document.getElementById('nombre').value = "";
+            document.getElementById('team').value = "";
+            document.getElementById('IntentosLibres').value = "";
+            document.getElementById('PorcientoTiro').value = "";
+            document.getElementById('TirosLibres').value = "";
+            document.getElementById('trespuntosPorciento').value = "";
+            document.getElementById('trespuntosIntentos').value = "";
+            document.getElementById('trespuntos').value = "";
+            document.getElementById('fieldgoalda').value = "";
+            document.getElementById('fielgoald').value = "";
+            document.getElementById('rank').value = "";
+            document.getElementById('fielporciento').value = "";
         })
         .catch(function(error) {
             // The document probably doesn't exist.
