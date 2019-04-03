@@ -14,8 +14,20 @@ header{
     background-color:  rgba(255, 255, 255, 0.925);
 }
 
+img{
+    background-color:  rgba(255, 255, 255, 0.925);
+
+}
+
 .line{
     display: inline;
+}
+
+.bigline{
+    position: absolute;
+    top: 90%;
+    left: 44.60%;
+    transform: translate(-50%, -50%);
 }
 
 .btnBuscar{
@@ -27,13 +39,15 @@ header{
 }
 
 .btn{
-    width: 20%;
-    right: 4%;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    /* right: 4%; */
 }
 
 .divBtn{
     /* top: 50%; */
-    left: 3%;
+    /* left: 3%; */
     /* transform: translate(-50%, -50%); */
 }
 
@@ -43,23 +57,23 @@ header{
 
 
 .divFather {
-    width: 53%;
+    width: 60%;
     height: 70%;
     background: rgba(255, 255, 255, 0.925);
     border-radius: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     position: absolute;
-    top: 48%;
-    left: 27%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .DatosJugadores{
     text-align: center;
     color: red;
-    margin: 40px 4%;
+    /* margin: 40px 4%; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -119,7 +133,7 @@ input[type="text"] {
     outline: none;
 }
 
-.col-3 {
+.cola{
     width: 27.33%;
     margin: 40px 4%;
     position: relative;
@@ -135,7 +149,7 @@ input[type="text"] {
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-.mainc{
+/* .mainc{
     width: 60%;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -145,6 +159,6 @@ input[type="text"] {
     transform: translate(-50%, -50%);
     font-size: 18px;
     
-}
+} */
 
 /* Header */
