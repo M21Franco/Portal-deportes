@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="Estilo.css">
 </head>
 
-<body class="fondo">
+<body onload="load()" class="fondo">
 
     <header class="container-fluid shadow">
         <div class="container">
@@ -77,7 +77,7 @@
                         <!-- </div> -->
 
                         <div class="col-12 cola container input-effect">
-                            <input class="effect-17" type="text" id="nombre" placeholder="Player" maxlength="6">
+                            <input class="effect-17" type="text" id="nombre" placeholder="Player" maxlength="10">
                             <span class="focus-border"></span>
                         </div>
 
@@ -145,10 +145,7 @@
                     <div class="container bigline col-9">
                         <div class="line cola col">
                             <button class="btn btn-lg btn-outline-primary" id="Enviar"
-                                onclick="guardar() ">Guardar</button>
-                        </div>
-                        <div class="line cola col">
-                            <button class="btn btn-lg btn-outline-primary">Limpiar</button>
+                                onclick="guardar()">Guardar</button>
                         </div>
                     </div>
 
@@ -189,8 +186,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
     <script src="Save.js"></script>
+    <script src="Onload.js"></script>
 </body>
 
 </html>

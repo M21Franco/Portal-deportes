@@ -17,8 +17,8 @@ db.collection("Jugadores").onSnapshot((querySnapshot) => {
           <td scope="col">${doc.data().FGM}</td>
           <td scope="col">${doc.data().FGA}</td>
           <td scope="col">${doc.data().FG}</td>
-          <td scope="col"><button class="btn btn-warning">Editar</button></td>
-          <td scope="col"><button class="btn btn-danger">Eliminar</button></td>
+          <td scope="col"><button class="btn btn-warning" onclick="editar('${doc.data().Player}','${doc.data().Team}','${doc.data().FGM}','${doc.data().FGA}','${doc.data().FG}')">Editar</button></td>
+          <td scope="col"><button class="btn btn-danger" onclick="eliminar('${doc.data().Player}')">Eliminar</button></td>
           
         </tr>
           `
@@ -26,22 +26,20 @@ db.collection("Jugadores").onSnapshot((querySnapshot) => {
   });
 });
 
+function editar(nombre,equipo,fgm,fga,fg) {
+  //llenamos lista
+  var lista ={ Nombre:nombre, Equipo:equipo, FGM:fgm,  FGA:fga, FG:fg};
+  //limpiamos el local storage
+  localStorage.clear();
+  //llenad del local estorage
+  localStorage.setItem("Lista", JSON.stringify(lista));
+  location.href="AdminForm.html"
 
-// <td index="0" class="dg-rank">${doc.data().RK}</td>
-
-
-{/* <td index="8" class="dg-r">${doc.data().PM}</td>
-          <td index="9" class="dg-h">${doc.data().PA}</td>
-          <td index="10" class="dg-d">${doc.data().P}</td>
-          <td index="11" class="dg-t">${doc.data().FTM}</td>
-          <td index="12" class="dg-hr active">${doc.data().FTA}</td>
-          <td index="13" class="dg-rbi">${doc.data().FT}</td> */}
-
-{/* <td index="14" class="dg-bb">${doc.data().OREB}</td>
-          <td index="15" class="dg-so">${doc.data().DREB}</td>
-          <td index="16" class="dg-sb">${doc.data().REB}</td>
-          <td index="17" class="dg-cs">${doc.data().AST}</td>
-          <td index="18" class="dg-avg">${doc.data().STL}</td>
-          <td index="19" class="dg-obp">${doc.data().BLK}</td>
-          <td index="20" class="dg-slg">${doc.data().TOV}</td>
-        <td index="21" class="dg-ops">${doc.data().EFF}</td> */}
+}
+function eliminar(noombre) {
+  db.collection("Jugadores").doc(nombre).delete().then(function() {
+    alert("Document successfully deleted!");
+}).catch(function(error) {
+    alert("Error removing document: ", error);
+});
+}
