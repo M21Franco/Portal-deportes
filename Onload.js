@@ -1,12 +1,12 @@
 function load(params) {
-    var data = JSON.parse(localStorage.getItem("Lista"));
-    if (data!=null) {
-         document.getElementById("nombre").value=data.Nombre;
+    if (JSON.parse(localStorage.getItem("Lista"))!=null) {
+        var data = JSON.parse(localStorage.getItem("Lista"));
+         var nombre=document.getElementById("nombre").value=data.Nombre;
          document.getElementById("team").value=data.Equipo;
          document.getElementById("fielgoald").value=data.FGM;
          document.getElementById("fieldgoalda").value=data.FGA;
          document.getElementById("fielporciento").value=data.FG;
-        localStorage.clear();
+         console.clear();
     }
     else
     {
@@ -15,6 +15,7 @@ function load(params) {
        document.getElementById("fielgoald").value="";
        document.getElementById("fieldgoalda").value="";
        document.getElementById("fielporciento").value="";
+       console.clear();
     }
 
     

@@ -9,14 +9,17 @@
   <!-- Boostrap CSS Link -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">  
   <link rel="stylesheet" href="Estilo.css">
   <title>Portal MLB</title>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
 
 </head>
 
-<body>
+<body onload="load()">
   <header class="container-fluid shadow">
     <div class="container">
       <nav class="row">
@@ -141,6 +144,17 @@
           </div>
         </div>
       </aside>
+
+      <aside class="col-9">
+          <div class="grafica">
+            <h1>Estadisticas MVP(#1 En la Tabla)</h1>
+            <div id="chart" class="mt-5">
+              
+            </div>
+          </div>
+        </div>
+      </aside>
+
 
     </div>
   </div>
