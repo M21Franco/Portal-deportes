@@ -24,7 +24,6 @@ firebase.initializeApp({
             FG:fieldgoalda
         })
         .then(function() {
-            console.log("Document successfully written!");
                   alert("Document successfully written");
                   document.getElementById('nombre').value = "";
                   document.getElementById('team').value = "";
@@ -45,7 +44,6 @@ firebase.initializeApp({
             FG:fieldgoalda
         })
         .then(function(docRef) {
-            console.log("Registro Satisfactorio: ", docRef.id);
                   alert("Registro Satisfactorio");
                   document.getElementById('nombre').value = "";
                   document.getElementById('team').value = "";
